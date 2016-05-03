@@ -31,7 +31,7 @@ import javax.inject.Inject;
 import org.slf4j.Logger;
 
 @Decorator
-public class DatumLogger /*implements Logger*/ {
+public abstract class DatumLogger implements Logger {
 
 	@Inject
 	@Delegate

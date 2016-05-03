@@ -44,7 +44,6 @@ import de.ejb3buch.ticket2rock.session.ticketbestellung.StornatorLocal;
         TransactionManagementType.CONTAINER)
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
 @MessageDriven
-@DependsOn("module=JMS,name=\"ticket2rock\",type=Queue")
 public class StornoMessageBean implements MessageListener {
 
     static Logger logger = Logger.getLogger(StornoMessageBean.class);
