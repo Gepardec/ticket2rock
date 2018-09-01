@@ -43,7 +43,7 @@ import org.apache.log4j.Logger;
 import de.ejb3buch.ticket2rock.entity.Konzert;
 
 @Singleton
-@Startup
+//@Startup
 @WebService(serviceName = "KonzertInfoHeute")
 @SOAPBinding(style = Style.RPC)
 public class AuskunftHeuteBean implements AuskunftHeuteLocal, AuskunftHeute {

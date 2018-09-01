@@ -44,7 +44,7 @@ public @BeanStatistics @Interceptor class BeanStatisticsInterceptor {
 	// können in derselben Interzeptor-Klasse definiert werden.
 	// Interzeptoren dürfen keine applikationsspezifischen Exceptions
 	// werfen.
-	@PostConstruct
+	//@PostConstruct
 	public void onPostConstruct(InvocationContext ctx) throws Exception {
 		beanstats.reportNewObject(ctx.getTarget());
 		ctx.proceed();
