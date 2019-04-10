@@ -33,13 +33,13 @@ JBoss
 
 Wir haben die Anwendung mit JBoss 6.0.0 und JBoss 6.1.0 Final getestet.
 
-Im JBoss muss eine Queue namens 'queue/ticket2rock' eingerichtet sein, um die Stornierung der 
+Im JBoss muss eine Queue namens 'java:/queue/ticket2rock' eingerichtet sein, um die Stornierung der 
 Ticketbestellung mittels JMS-Nachricht durchführen zu können. Dafür muss in der entsprechenden 
 Konfigurationsdatei '$JBOSS_HOME/server/default/deploy/hornetq/hornetq-jms.xml' folgende Queue 
 eingetragen werden:
 	
    <queue name="ticket2rock">
-      <entry name="/queue/ticket2rock" />
+      <entry name="java:/queue/ticket2rock" />
    </queue>
 
 Bekannte Stolpersteine:

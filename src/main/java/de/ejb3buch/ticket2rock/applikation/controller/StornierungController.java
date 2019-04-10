@@ -44,10 +44,10 @@ public class StornierungController implements Serializable {
 
 	static Logger logger = Logger.getLogger(StornierungController.class);
 	
-	@Resource(mappedName="queue/ticket2rock")
+	@Resource(mappedName="java:/queue/ticket2rock")
 	private Queue queue;
 	
-	@Resource(mappedName="ConnectionFactory")
+	@Resource(mappedName="java:/ConnectionFactory")
 	private QueueConnectionFactory factory;
 	
 	private String bestellnummer;
